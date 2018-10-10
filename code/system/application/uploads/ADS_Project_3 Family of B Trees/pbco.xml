@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<pbco xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.pbcls.org/pbco/ pbco.xsd" xmlns="http://www.pbcls.org/pbco/">
+	<!-- 案例的基本属性 -->
+	<name>ADS_Project_3 Family of B Trees</name>
+	<description></description>
+	<version>1.0</version>
+	<author>PBCLS</author>
+	<email>PBCLS@zju.edu.name</email>
+	<creationdate>2010-03-02</creationdate>
+	
+	<!-- 案例的资源 -->
+	<resources>
+		<resource>
+			<id>1</id>
+			<name>Player1</name>
+			<description></description>
+			<role>PM</role>
+		</resource>	
+		<resource>
+			<id>2</id>
+			<name>Player2</name>
+			<description></description>
+			<role>Member</role>
+		</resource>
+		<resource>
+			<id>3</id>
+			<name>Player3</name>
+			<description></description>
+			<role>Member</role>
+		</resource>
+	</resources>	
+	
+	<!-- 案例任务 -->
+	<tasks>
+		<task>
+			<id>1</id>
+			<name>Introduction</name>
+			<wbs>1</wbs>
+			<description>Describe B-tree and its operations (8 pts.).</description>
+			<isparent>0</isparent>
+			<resourceids>1</resourceids>
+			<duration>5</duration>
+			<inputs>
+				<file>P3.doc</file>	
+			</inputs>
+			<outputs>
+				<file>introduction.doc</file>	
+			</outputs>
+		</task>	
+		<task>
+			<id>2</id>
+			<name>Analysis</name>
+			<wbs>2</wbs>
+			<description>Write analysis and comments on B- trees and B+ trees (9 pts.).</description>
+			<isparent>0</isparent>
+			<resourceids>2</resourceids>
+			<duration>5</duration>
+			<predecessorids>1</predecessorids>
+			<outputs>
+				<file>anlysis.doc</file>	
+			</outputs>
+		</task>					
+		<task>
+			<id>3</id>
+			<name>Documentation Writing</name>
+			<wbs>3</wbs>
+			<description>Combine all the chapters into a complete report (1 point for overall style of documentation).</description>
+			<isparent>0</isparent>
+			<resourceids>3</resourceids>
+			<duration>2</duration>
+			<predecessorids>2</predecessorids>
+			<inputs>
+				<file>Requirements.doc</file>	
+			</inputs>
+			<outputs>
+				<file>Report.doc</file>	
+			</outputs>
+		</task>			
+		<task>
+			<id>4</id>
+			<name>Make presentation</name>
+			<wbs>4</wbs>
+			<description></description>
+			<isparent>0</isparent>
+			<resourceids>3</resourceids>
+			<duration>2</duration>
+			<predecessorids>3</predecessorids>
+			<inputs>
+				<file></file>	
+			</inputs>
+			<outputs>
+				<file>Project.ppt</file>	
+			</outputs>
+		</task>		
+		
+					
+  </tasks>
+	
+</pbco>
