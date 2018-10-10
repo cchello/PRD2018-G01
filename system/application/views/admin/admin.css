@@ -1,0 +1,28 @@
+@CHARSET "UTF-8";
+<style type="text/css">
+.mainbody-2 {
+	font-size:12px
+}
+.logo {
+	width:980px;
+	height:120px;
+	background:url('pbcls.jpg') 0px 0px no-repeat;
+	position:absolute;
+	left: 1px;
+	top: -1px;
+}
+.operations {
+	width:980px;
+	height:auto;
+	margin:0 auto;
+	padding:0;
+	position:relative;
+}
+
+.operations p {
+	text-align:right;
+}
+.mainboby-2 table {
+	
+}
+</style>

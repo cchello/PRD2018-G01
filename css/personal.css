@@ -1,0 +1,174 @@
+@CHARSET "UTF-8";
+<style type="text/css">
+body {
+	font: 100% Verdana, Arial, Helvetica, sans-serif;
+	text-align:center;
+	margin: 0 auto; /* 最好将 body 元素的边距和填充设置为 0 以覆盖不同的浏览器默认值 */
+}
+
+#header {
+	margin:0 auto;
+	width:980px;
+	height:120px;
+	position:relative;
+	margin-bottom:10px;
+	border:1px solid #E7E7E7;
+}
+
+#container {
+	width:  980px;
+	height: 600px;
+	position: relative;
+	margin:10px auto;
+	border:1px solid #E7E7E7;
+}
+
+#leftBar {
+	text-align:center;
+	width:200px;
+	float:left;
+	clear:left;
+	overflow:hidden;
+	margin-top:5px;
+	margin-left:5px;
+	height:590px;
+	position:relative;
+}
+
+#selfPortrait {
+	text-align:center;
+	margin:5px auto;
+	width:190px;
+	height:200px;
+	border:solid #E7E7E7 1px;
+}
+
+#nav {
+	text-align:center;
+	margin:5px auto;
+	width:190px;
+	height:400px;
+}
+
+#navigation {
+	text-align:center;
+	margin-left:0px;
+	margin-top:5px;
+	width:190px;
+	height:350px;
+	list-style-type:none;
+	border:solid #E7E7E7 1px;
+	padding-left:0;
+}
+
+#navigation li a {
+	border-top:#E7E7E7 solid;
+	color:#000000;
+	text-decoration:none;
+	display:block;
+	width:160px;
+	height:25px;
+	text-align:center;
+	padding:5px auto;
+	margin:5px auto;
+	font-size:14px;
+	font-family:"宋体", "隶书", "楷体";
+	list-style-type:none;
+	border:solid #E7E7E7 1px;
+}
+
+#navigation li a:hover {
+	background-color:#94CBF3;
+	color:#FFFFFF;
+}
+
+#main {
+	left:5px;
+	float:right;
+	text-align:left;
+	width:770px;
+	margin:5px auto;
+	height:590px;
+	border:solid #E7E7E7 1px;
+}
+
+#subNav {
+	text-align:left;
+	width:760px;
+	height:25px;
+	list-style-type:none;
+	position:relative;
+}
+
+#subNavigation {
+	text-align:left;
+	margin:2px auto;
+	width:760px;
+	height:21px;
+	list-style-type:none;
+	position:relative;
+	float:right;
+}
+
+#subNavigation li{
+	float:left;
+}
+
+#subNavigation li a{
+	color:#000000;
+	text-decoration:none;
+	display:block;
+	width:80px;
+	height:20px;
+	text-align:center;
+	padding:2px auto 2px;
+	margin-left:2px;
+	margin-top:0px;
+	border:solid #E7E7E7 1px;
+}
+
+#subNavigation li a:hover {
+	background-color:#94CBF3;
+	color:#FFFFFF;
+}
+
+#mainContent {
+	overflow:auto;
+	text-align:left;
+	width:765px;
+	margin:0px auto;
+	height:560px;
+	border:solid #E7E7E7 1px;
+}
+
+#footer {
+	margin:10px auto;
+	clear:both;
+	width:980px;
+	height:50px;
+	border:1px solid #E7E7E7;
+}
+
+#loadingMessage {
+	margin-top:0px;
+	margin-left:500px;
+	width:300px;
+	height:50px;
+	position:absolute;
+	z-index:99;
+}
+#loadingMessage img {
+	max-width:20px; 
+	width:20px; 
+	width:expression(document.body.clientWidth>20?"20px":"auto"); 
+	overflow:hidden; 
+}
+.mainBody {
+	width:auto;
+	height:auto;
+	float:left;
+	clear:left;
+	overflow:hidden;
+	margin:0 0;
+}
+</style>
