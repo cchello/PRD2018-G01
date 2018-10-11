@@ -1,0 +1,450 @@
+@CHARSET "UTF-8";
+<style type="text/css">
+body {
+	font: 100% Verdana, Arial, Helvetica, sans-serif;
+	text-align:center;
+	margin: 0 auto; /* 最好将 body 元素的边距和填充设置为 0 以覆盖不同的浏览器默认值 */
+}
+
+#header {
+	margin:0 auto;
+	width:980px;
+	height:120px;
+	position:relative;
+	margin-bottom:10px;
+	background:url("../img/pbcls.jpg") 0px 0px no-repeat; /*增加了“..”作为路径导向-06-03wmc  */
+	border:1px solid #E7E7E7;
+}
+
+#container {
+	width:  980px;
+	height: 600px;
+	position: relative;
+	margin:10px auto;
+	border:1px solid #E7E7E7;
+}
+
+#leftBar {
+	text-align:center;
+	width:200px;
+	float:left;
+	clear:left;
+	overflow:hidden;
+	margin-top:5px;
+	margin-left:0px;
+	height:590px;
+	position:relative;
+	border:solid #E7E7E7 1px;
+}
+
+#selfInfo {
+	text-align:center;
+	margin:5px auto;
+	width:190px;
+	height:150px;
+	border:solid #E7E7E7 1px;
+}
+
+#nav {
+	text-align:center;
+	margin:5px auto;
+	width:190px;
+	height:200px;
+	border:solid #E7E7E7 1px;
+}
+
+#navigation {
+	text-align:center;
+	margin-left:0px;
+	margin-top:5px;
+	width:190px;
+	height:180px;
+	list-style-type:none;
+	border:solid #E7E7E7 1px;
+	padding-left:0;
+}
+
+#navigation li {
+	background-color:#FFFFFF;
+}
+
+#navigation li a {
+	border-top:#E7E7E7 solid;
+	color:#000000;
+	text-decoration:none;
+	display:block;
+	width:160px;
+	height:18px;
+	text-align:center;
+	padding:5px auto;
+	margin:5px auto;
+	font-size:14px;
+	font-family:"宋体", "隶书", "楷体";
+	list-style-type:none;
+	border:solid #E7E7E7 1px;
+}
+
+#navigation li a:hover {
+	background-color:#94CBF3;
+	color:#999;
+}
+
+#teamate {
+	text-align:center;
+	margin:5px auto;
+	width:190px;
+	height: 220px;
+	border:solid #E7E7E7 1px;
+}
+
+#rightBar {
+	text-align:center;
+	width:200px;
+	float:right;
+	clear:right;
+	margin-right:0px;
+	margin-top:5px;
+	overflow:hidden;
+	height:590px;
+	position:relative;
+	border:solid #E7E7E7 1px;
+}
+
+
+#proNews {
+	width:190px;
+	margin:5px auto;
+	height:260px;
+	border:solid #E7E7E7 1px;
+}
+#proNewsTitle {
+	border:solid #E7E7E7 1px;
+	background-color:#E7E7E7;
+	height:20px;
+	width:190px;
+	align:center;
+}
+
+#newsWindow{
+	width:190px;
+	height:210px;
+	border:solid #E7E7E7 1px;
+}
+
+#proNewsWindow{
+	width:180px;
+	height:230px;
+	font-size:12px;	
+	text-align:left;
+	overflow:auto;
+}
+
+#im {
+	width:190px;
+	margin:5px auto;
+	height:260px;
+	border:solid #E7E7E7 1px;
+}
+
+#imTitle{
+	border:solid #E7E7E7 1px;
+	background-color:#E7E7E7;
+	height:20px;
+	width:190px;
+	align:center;
+}
+
+#msgWindow{
+	width:190px;
+	height:210px;
+	border:solid #E7E7E7 1px;
+}
+
+#msg{
+	width:130px;
+}
+
+#imMsgSender{
+	width:40px;
+}
+
+#imMsgWindow{
+	width:180px;
+	height:200px;
+	font-size:12px;	
+	text-align:left;
+	overflow:auto;
+}
+
+#imSender{
+	width:190px;
+	height:30px;
+	border:solid #E7E7E7 1px;
+}
+
+#quit {
+	text-align:left;
+	width:190px;
+	margin:5px auto;
+	height:50px;
+	border:solid #E7E7E7 1px;
+	vertical-align:middle;
+	border:solid #E7E7E7 1px;
+}
+
+#main {
+	text-align:center;
+	width:550px;
+	margin:5px auto;
+	height:590px;
+	border:solid #E7E7E7 1px;
+}
+
+#subNav {
+	text-align:left;
+	width:540px;
+	height:25px;
+	list-style-type:none;
+	position:relative;
+	margin:5px auto;
+	border:solid #E7E7E7 1px;
+}
+
+#subNavigation {
+	text-align:left;
+	margin:2px auto;
+	width:530px;
+	height:21px;
+	padding-left:2px;
+	padding-top:0px;
+	list-style-type:none;
+	position:relative;
+	border:solid #E7E7E7 1px;
+}
+
+#subNavigation li{
+	float:left;
+	backgournd-color:#FFFFFF;
+}
+
+#subNavigation li a{
+	color:#000000;
+	text-decoration:none;
+	display:block;
+	width:97px;
+	height:20px;
+	text-align:center;
+	padding:2px auto 2px;
+	margin-left:2px;
+	margin-top:0px;
+	border:solid #E7E7E7 1px;
+}
+
+#subNavigation li a:hover {
+	background-color:#94CBF3;
+	color:#999;
+}
+
+#mainContent {
+	text-align:left;
+	width:540px;
+	margin:5px auto;
+	height:550px;
+	border:solid #E7E7E7 1px;
+	overflow:auto;
+}
+
+.docTable {
+	width:520px;
+	margin:5px auto;
+}
+
+.docTable tr th {
+	text-align: center;
+}
+
+.docTable tr td {
+	text-align: center;
+}
+
+.docTable tr th span {
+	font-size:14px;
+}
+
+.docTable tr td span {
+	font-size:12px;
+}
+
+.taskDescri{
+	margin: 0px auto;
+	height:100px;
+	width: 480px;
+	border:1px solid #E7E7E7;
+	overflow:auto;
+	font-size:12px;
+	text-align:left;
+}
+
+#sugText{
+	margin: 0px auto;
+	height:100px;
+	width: 480px;
+	border:1px solid #E7E7E7;
+	overflow:auto;
+	font-size:12px;
+	text-align:left;
+}
+
+#screen {
+	margin:0px auto;
+	overflow:hidden;
+	width:540px;
+	height:550px;
+	border:solid #E7E7E7 1px;
+	position:relative;
+	padding:0 auto;
+}
+
+#footer {
+	margin:10px auto;
+	clear:both;
+	width:980px;
+	height:50px;
+	border:1px solid #E7E7E7;
+}
+
+.evaResultBar{
+	width:530px;
+	height:430px;
+	border:solid #E7E7E7 1px;
+	overflow:auto;
+}
+
+.evaResultSelectBar{
+	width:530px;
+	height:100px;
+	border:solid #E7E7E7 1px;
+	overflow:auto;
+}
+
+#loadingMessage {
+	margin-top:0px;
+	margin-left:500px;
+	width:300px;
+	height:50px;
+	position:absolute;
+	z-index:99;
+}
+#loadingMessage img {
+	max-width:20px; 
+	width:20px; 
+	width:expression(document.body.clientWidth>20?"20px":"auto"); 
+	overflow:hidden; 
+}
+
+#refName{
+	width:400px;
+}
+
+#refDescription{
+	width:400px;
+	height:100px;
+}
+
+#suggestionBar{
+	background:#F8FBFB none repeat scroll 0 0;
+	position:absolute;
+	width:540px;
+	z-index:10000;
+	border:1px solid #B9DCFE;
+	display:none;
+	height:550px;
+	top:5px;
+	left:220px;
+	opacity:0.9;
+}
+
+#suggestionBar b{
+	margin:0 auto;
+	font-size:16px;
+	font-weight:bold;
+}
+
+#suggestionBar p{
+	margin:15px;
+	font-size:14px;
+}
+
+#suggestionBar span{
+	margin:15px;
+	font-size:12px;
+	color:red;
+}
+
+#doRef{
+	margin:15px;
+	width:350px;
+}
+
+#doSug{
+	margin:15px;
+	width:350px;
+	height:150px;
+}
+
+#refSugSubmit{
+	margin-left:260px;
+}
+
+#evaBar{
+	background:#F8FBFB none repeat scroll 0 0;
+	position:absolute;
+	width:540px;
+	z-index:10000;
+	border:1px solid #B9DCFE;
+	display:none;
+	height:600px;
+	top:5px;
+	left:220px;
+	opacity:0.9;
+}
+
+#evaBar span{
+	font-size:13px;
+	margin-left:15px;
+	font-weight:bold;
+}
+
+#evaBar b{
+	font-size:14px;
+	margin-left:15px;
+	font-weight:bold;
+}
+
+#docDenyResn{
+	background:#F8FBFB none repeat scroll 0 0;
+	position:absolute;
+	width:540px;
+	z-index:10000;
+	border:1px solid #B9DCFE;
+	display:none;
+	height:600px;
+	top:5px;
+	left:220px;
+	opacity:0.9;
+}
+
+#docShowDenyResn{
+	background:#F8FBFB none repeat scroll 0 0;
+	position:absolute;
+	width:540px;
+	z-index:10000;
+	border:1px solid #B9DCFE;
+	display:none;
+	height:300px;
+	top:5px;
+	left:220px;
+	opacity:0.9;
+}
+
+</style>
