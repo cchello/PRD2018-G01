@@ -1,0 +1,547 @@
+<style type="text/css">
+
+body {
+	font: 100% Verdana, Arial, Helvetica, sans-serif;
+	margin: 0 auto; /* 最好将 body 元素的边距和填充设置为 0 以覆盖不同的浏览器默认值 */
+	padding: 0;
+}
+.container {
+	width:980px;
+	height:auto;
+	margin:0 auto;
+	padding:0;
+	position:relative;
+}
+.header {
+	width:980px;
+	height:150px;
+	position:relative;
+	margin-bottom:10px;
+	border:1px solid #E7E7E7;
+}
+
+.logo {
+	width:980px;
+	height:120px;
+	background:url('../img/pbcls.jpg') 0px 0px no-repeat; /*增加了“..”作为路径导向-06-03wmc  */
+	position:absolute;
+	left: 1px;
+	top: -1px;
+}
+
+.per_info {
+	width:200px;
+	height:80px;
+	position:absolute;
+	right:120px;
+	top:10px;
+}
+
+.per_info p {
+	font-family:Georgia, "Times New Roman", Times, serif;
+	font-size:14px;
+	text-align:center;
+}
+
+.per_info a{
+	text-align:center;
+	font-size:14px;
+	font-family:"宋体", "隶书", "楷体";
+}
+
+.nav {
+	position:absolute;
+	left:0px;
+	top:122px;
+	width:940px;
+	height:25px;
+	font-size:14px;
+	list-style-type:none;
+	background:#E0E0E0;
+	clear:both;
+}
+.nav li {
+	float:left;
+}
+.nav li a {
+	color:#000000;
+	text-decoration:none;
+	padding:4px 10px 0px;
+	display:block;
+	width:97px;
+	height:22px;
+	text-align:center;
+	/*background-color: #009966;*/
+	margin-left:2px;
+}
+
+.nav li a:hover {
+	background-color:#94CBF3;
+	color:#FFFFFF;
+}
+
+.footer {
+	width:980px;
+	margin:0 auto;
+	clear:both;
+
+}
+
+.maincontent {
+	width:980px;
+	height:550px;
+	border:1px solid #E7E7E7;
+}
+.main_nav {
+	width:980px;
+	height:20px;
+	font-size:14px;
+	font-family:Georgia, "Times New Roman", Times, serif;
+	text-align:left;
+	margin:10px 0;
+}
+
+.sidebar_nav {
+	width:260px;
+	height:auto;
+	font-size:14px;
+	font-family:Georgia, "Times New Roman", Times, serif;
+	text-align:left;
+	margin-top:10px;
+	padding:0 auto;
+	list-style-type:none;
+}
+.sidebar_nav li {
+	border-bottom:thin;
+	border-bottom-color:#DDDDDB;
+}
+.sidebar_nav li a {
+	color:#000000;
+	text-decoration:none;
+	padding:0 auto;
+	display:block;
+	width:150px;
+	height:22px;
+	text-align:center;
+	/*background-color: #009966;*/
+	font-size:12px;
+}
+
+.sidebar_nav li a:hover {
+	background-color:#94CBF3;
+	color:#FFFFFF;
+}
+
+.sidebar {
+	width:260px;
+	height:550px;
+	margin-left:0px;
+	top:0px;
+	left:10px;
+	float:left;
+	text-align:center;
+	border:thin;
+	border:1px solid #E7E7E7;
+	
+}
+.sidebar img {
+	text-align:left;
+	margin-left:5px;
+}
+
+.sidebar p {
+	text-align:left;
+	font-size:12px;
+	margin: 0 auto;
+}
+.sidebar b {
+	text-align:left;
+	font-size:14px;
+	font-style:oblique;
+	padding-top:5px;
+}
+.sidebar a {
+	color:#5AF;
+	text-decoration:none;
+	padding:4px auto 0px;
+	/*display:block;*/
+	width:97px;
+	height:22px;
+}
+
+.sidebar a:hover {
+	background-color:#94CBF3;
+	color:#FFFFFF;
+}
+
+.side_nav {
+	width:260px;
+	height:auto;
+	margin:0;
+	top:0px;
+	left:10px;
+	float:left;
+	clear:left;
+	overflow:hidden;
+	text-align:center;
+	
+}
+
+.side_nav a {
+	text-decoration:none;
+	color:#5AF;
+	padding:4px auto 0px;
+	/*display:block;*/
+	width:97px;
+	height:22px;
+}
+.side_nav p{
+	font-size:14px;
+	text-align:left;
+	padding-left:4px;
+}
+
+.side_ins_cre {
+	width:260px;
+	height:auto;
+	margin-top:10px;
+	top:0px;
+	left:10px;
+	float:left;
+	clear:left;
+	overflow:hidden;
+	text-align:center;
+}
+
+.per_status {
+	width:700px;
+	height:auto;
+	float:right;
+	clear:right;
+	overflow:auto;
+	margin-right:10px;
+}
+
+.per_status table tr th{
+	font-size: 14px;
+	text-align:center;
+}
+
+.per_status table tr td{
+	text-align:center;
+}
+
+.per_status table tr td span{
+	font-size:12px;
+}
+
+.per_status table tr td a{
+	font-size:12px;
+}
+
+/*case page*/
+.mainbody {
+	width:680px;
+	height:auto;
+	float:right;
+	clear:right;
+	overflow:hidden;
+	margin:0 0;
+}
+
+.mainbody p {
+	/*text-align:right;*/
+	padding:0;
+}
+.mainbody b {
+	text-align:left;
+	padding:0;
+}
+
+.select_box {
+
+}
+
+.case_upload {
+
+}
+
+.ins_cre {
+	width:200px;
+	text-align:left;
+	font-size:14px;
+}
+
+.insCreTable{
+	width: 230px;
+}
+
+.insCreTable p{
+}
+
+.insCreTable tr td span{
+	font-size:12px;
+}
+
+.ins_cre p{
+	font-size:10px;
+}
+
+.case_info {
+	overflow:auto;
+	float:right;
+	clear:right;
+	width: 700px;
+	height:500px;
+	font-size: 12px;
+	padding-left:5px;
+}
+
+.case_info p {
+	text-align:left;
+	font-size:14px;
+	font-weight:bold;
+	margin-top:0;
+	margin-bottom:0;
+}
+.case_info b {
+	font-size:14px;
+	margin-top:0;
+	padding-left:2px;
+	font-weight:bold;
+	text-align: left;
+}
+.case_infor_table {
+	width:600px;
+	border:1px solid #E7E7E7;
+}
+
+.case_infor_table p {
+	text-align:left;
+	font-weight:100;
+	
+}
+.case_infor_table table {
+	font-weight: normal;
+}
+.case_upload {
+	margin:0 auto;
+	width:600px;
+	height:auto;
+}
+
+.role_dynamics {
+	padding:0 auto;
+	text-align:left;
+	float:right;
+	clear:right;
+	overflow:hidden;
+	width: 700px;
+}
+.role_dynamics b {
+	text-align:left;
+	font-weight:bold;
+	margin-bottom:0;
+	margin-top:0;
+	font-size:14px;
+}
+
+.role_dynamics p {
+	text-align:left;
+	font-size:12px;
+	margin-top:0;
+	margin-bottom:0;
+}
+
+.ins_info,.ins_case_info{
+	margin:0 auto;
+	margin-top:10px;
+	border:solid #E7E7E7;
+	border-width:1px;
+	width:250px;
+}
+.ins_ope{
+	margin:0 auto;
+	margin-top:10px;
+	width:250px;
+}
+
+.ins_ope p{
+	text-align:left;
+	font-size:14px;
+}
+
+.ins_details {
+	width:480px;
+	height:auto;
+	margin-left:10px;
+	float:left;
+	clear:left;
+	overflow:hidden;
+	text-align:center;
+}
+
+
+
+.about_case {
+	width:480px;
+	height:auto;
+	maring-right:10px;
+	float:right;
+	clear:right;
+	overflow:hidden;
+	text-align:center;
+}
+
+.ins_details p {
+	text-align:left;
+	font-weight:100;
+	font-size:12px;
+}
+.about_case p{
+	font-weight:100;
+	font-size:12px;
+}
+
+.self_info {
+	
+}
+.self_info p {
+	text-align:left;
+	font-size:14px;
+}
+
+.per_dynamic {
+	border-top:thin;
+	border-color:#DDDDDB;
+}
+
+.per_dynamic b {
+	font-weight:bold;
+	font-size:14px;
+	padding-left:5px;
+}
+
+.self_message {
+	border-top:thin;
+	border-color:#DDDDDB;
+}
+self_message b {
+	font-weight:bold;
+	font-size:14px;
+	padding-left:5px;
+}
+
+.edit_info_hang {
+	float:right;
+	overflow:hidden;
+	clear:right;
+	margin-right:5px;
+}
+
+.pass_change {
+	text-align:left;
+	margin-top:15px;
+	margin-left:10px;
+}
+
+.portrait_upload {
+	text-align:left;
+	margin:50px auto;
+}
+
+.mail_charge {
+	
+}
+
+.case_list {
+	width:260px;
+	height:auto;
+	font-size:14px;
+	text-align: left;
+}
+
+.ins_cre {
+	margin-top:20px;
+	font-size:14px;
+	text-align:left;
+	width:260px;
+	height:auto;
+}
+
+.learning_ins {
+	margin-top:10px;
+	font-size:14px;
+	height:auto;
+	border-top:dashed;
+	border-color:#DDDDDB;
+	width:680px;
+	text-align:left;
+}
+
+.basic_info {
+	font-size:14px;
+	margin-top:10px;
+	height:auto;
+	text-align:left;
+}
+.basic_info b {
+	text-align:left;
+	padding-left:10px;
+	font-size:15px;
+	font-family:"宋体", "隶书", "楷体";
+}
+.basic_info p {
+	text-align:left;
+	font-size:12px;
+	padding-left:2px;
+}
+
+.contact_info {
+	font-size:14px;
+	margin-top:15px;
+	height:auto;
+	text-align:left;
+}
+.contact_info b {
+	text-align:left;
+	padding-left:10px;
+	font-size:15px;
+	font-family:"宋体", "隶书", "楷体";
+}
+.contact_info p {
+	text-align:left;
+	font-size:12px;
+	padding-left:2px;
+}
+
+.role_op {
+	text-align:left;
+	width:700px;
+	font-size:14px;
+	height:auto;
+	border-top:solid #E7E7E7;
+	border-width:1px;
+}
+
+.case_ins_list {
+        position:relative;
+        left:-2px;
+        top:-2px;
+        font-size:12px;
+        width:260px;
+        line-height:18px;border:0px;
+        color:#909993;
+}
+
+.apply_charge_role{
+		position:relative;
+        left:0px;
+        top:-2px;
+        font-size:12px;
+        width:90px;
+        line-height:18px;border:0px;
+        color:#909993;
+}
+
+</style>

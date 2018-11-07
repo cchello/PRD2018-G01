@@ -1,0 +1,43 @@
+@charset "utf-8";
+/* CSS Document */
+a:link{text-decoration:none; color:#000000}
+a:visited{text-decoration:none; color:#000000}
+a:hover {text-decoration:none;color: #33CCFF}
+.bbs
+{
+	width:980px;
+	font-size:14px;
+	border:1px solid #E7E7E7;
+}
+.subMain{
+	float:left;
+	width:470px;
+	border:1px solid #E7E7E7;	
+}
+.ajaxSubject{
+	float:right;
+	width:500px;
+	height:500px;
+	border:1px solid #E7E7E7;
+}
+.bbs table{
+	border:solid #999;
+}
+
+.bbs table td,.bbs table th
+{
+	padding-left:15px;
+	padding-right:15px;
+	height:35px;
+}
+
+.bbs .title{
+	background:#CCCCCC;
+}
+
+
+.bbs .content td
+{
+	border-top:solid #999;
+	border-top-width:5px;
+}

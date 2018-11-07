@@ -1,0 +1,29 @@
+@charset "utf-8";
+#content {
+	width:980px;
+	margin:0 auto;
+	clear:left;
+	height:300px;
+	margin-bottom:10px;
+}
+
+#footer {
+	width:980px;
+	margin:0 auto;
+	height:auto;
+	text-align:center;
+}
+
+#pagebody {
+	width:800px;
+	margin: 0 auto;
+	height:auto;
+}
+
+#step {
+	width: 780px;
+	margin:0 auto;
+	height:auoto;
+}
+/* CSS Document */
+
